@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>The world of movies</h1>
+        </div>
+    </header>
+    <main>
+        <section class="site-section">
+            <form class="site-form">
+                <input class="name-input" type="text" placeholder="write the name of the movie..." aria-label="write the name of the movie...">
+                <select class="type-select">
+                    <option value="">Movie type</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="drama">Drama</option>
+                </select>
+                <button class="search-btn" type="submit">Search</button>
+            </form>
+            <div class="container">
+               
+                <ul class="movies-list">
+                    
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+    <template class="movie-template">
+        <li class="movie-item">
+            <img class="movie-img" src=" "  alt="">
+            <div class="item-text">
+                <h3 class="movie-title"></h3>
+                 <div class="movie-def">
+                    <time class="movie-year">year: <span></span></time>
+                    <p class="movie-type">type:</p>
+                 </div>
+                 <a class="link-imdb" href="#"></a>
+            </div>
+        </li>
+    </template>
+    <script src="./main.js"></script>
+</body>
+</html>
